@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainVC" customModule="SizeClassDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-Rt-MYZ">
+                                <rect key="frame" x="60" y="44" width="372" height="48"/>
+                                <color key="backgroundColor" red="0.768403389084507" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </variation>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="raccoon.png" translatesAutoresizingMaskIntoConstraints="NO" id="E91-y1-yk1">
+                                <rect key="frame" x="458" y="44" width="378" height="349"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E91-y1-yk1" secondAttribute="bottom" id="B7r-L6-3a0"/>
+                            <constraint firstItem="E91-y1-yk1" firstAttribute="top" secondItem="QP6-Rt-MYZ" secondAttribute="top" id="Kbm-pw-vH9"/>
+                            <constraint firstItem="E91-y1-yk1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PZX-gD-agD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="QP6-Rt-MYZ" secondAttribute="trailing" constant="16" id="VKL-v3-dpY"/>
+                            <constraint firstItem="QP6-Rt-MYZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="X1u-mS-qWz"/>
+                            <constraint firstItem="E91-y1-yk1" firstAttribute="leading" secondItem="QP6-Rt-MYZ" secondAttribute="leading" id="Z28-WJ-yd2"/>
+                            <constraint firstItem="E91-y1-yk1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="10" id="gqA-Tb-stp"/>
+                            <constraint firstItem="QP6-Rt-MYZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="rAQ-hB-peG"/>
+                            <constraint firstItem="E91-y1-yk1" firstAttribute="top" secondItem="QP6-Rt-MYZ" secondAttribute="bottom" constant="30" id="rP3-3w-zPI"/>
+                            <constraint firstItem="QP6-Rt-MYZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xlw-8K-RgH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E91-y1-yk1" secondAttribute="trailing" constant="16" id="xmr-Dh-Mdp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VKL-v3-dpY"/>
+                                <exclude reference="xmr-Dh-Mdp"/>
+                                <exclude reference="Kbm-pw-vH9"/>
+                                <exclude reference="gqA-Tb-stp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="B7r-L6-3a0"/>
+                                <include reference="VKL-v3-dpY"/>
+                                <include reference="xmr-Dh-Mdp"/>
+                                <exclude reference="X1u-mS-qWz"/>
+                                <include reference="Kbm-pw-vH9"/>
+                                <exclude reference="PZX-gD-agD"/>
+                                <exclude reference="Z28-WJ-yd2"/>
+                                <include reference="gqA-Tb-stp"/>
+                                <exclude reference="rP3-3w-zPI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197" y="67"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="raccoon.png" width="186.72000122070312" height="176.63999938964844"/>
+    </resources>
+</document>
